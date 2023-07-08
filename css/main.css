@@ -145,7 +145,8 @@ body{
 	font-weight: 400;}
 
 .sub-header__title p{
-	color: var(--clr-white2);}
+	color: var(--clr-white2);
+	line-height: 1.3;}
 
 .sub-header b, .sub-header span{
 	font-weight: 600;}
@@ -210,7 +211,7 @@ body{
 		flex-direction: column;
 		align-items: center;
 		position: fixed;
-		top: -100%;
+		top: -200%;
 		right: 0;
 		width: 100%;
 		height: 130px;
@@ -561,5 +562,11 @@ footer{
 	}
 	.swiper-slide a{
 		bottom: 60px;
+		font-size: 17px;
+		padding: 7px;
 	}
+
+	.swiper-button-prev, .swiper-button-next{
+	--swiper-navigation-size: 24px;	
+}
 }
