@@ -6,12 +6,12 @@ window.onload = function(){
     contenedor.style.opacity = '0';}
 
 var swiper = new Swiper(".mySwiper", {
-     effect: "coverflow",
+     effect: "cube",
       grabCursor: true,
       loop: true,
       centeredSlides: true,
-      slidesPerView: "auto",
-      coverflowEffect: {
+      slidesPerView: "1.1",
+      cubeEffect: {
         rotate: 50,
         stretch: 0,
         depth: 100,
