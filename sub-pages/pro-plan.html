@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="../fta/all.min.css">
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<link rel="icon" href="../img/icon.ico">
-		<title>Selecciona tu Plan! | La Mejor opción de Diseño Web en Venezuela ...</title>
+		<title>Plan Pro | La Mejor opción de Diseño Web en Venezuela ...</title>
 	</head>
 	<body>
 		<div id="contenedor-carga">
@@ -24,23 +24,7 @@
 				</nav>
 			</div>
 		</header>
-		<section class="plans" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
-			<article>
-				<h3><i class="fa-solid fa-chess-pawn"></i><br>Plan Básico 77.9$</h3>
-				<ul class="plans__ul">
-					<li><i class="fa-solid fa-check"></i> Sitio Web Tipo Blog</li>
-					<li><i class="fa-solid fa-check"></i> Dominio</li>
-					<li><i class="fa-solid fa-check"></i> Web Hosting</li>
-					<li><i class="fa-solid fa-check"></i> Responsive Design</li>
-					<li><i class="fa-solid fa-check"></i> Certificación SSL</li>
-					<li><i class="fa-solid fa-xmark"></i> Compras Integradas</li>
-					<li><i class="fa-solid fa-xmark"></i> E-commerce</li>
-					<li><i class="fa-solid fa-xmark"></i> Cambios Adicionales</li>
-				</ul>
-				<div class="plans__order">
-					<a href="basic-plan.html">Ordenar Ahora</a>
-				</div>
-			</article>
+		<section class="plans plan-page" data-aos="fade-right" data-aos-delay="900" data-aos-duration="1000">
 			<article>
 				<h3><i class="fa-solid fa-chess-bishop"></i><br>Plan Pro 149.9$</h3>
 				<ul class="plans__ul">
@@ -54,27 +38,29 @@
 					<li><i class="fa-solid fa-check"></i> Cambios Adicionales</li>
 				</ul>
 				<div class="plans__order">
-					<a href="pro-plan.html">Ordenar Ahora</a>
+					<a href="plans.html"><i class="fa-solid fa-reply"></i> Ver todos los Planes</a>
 				</div>
 			</article>
-			<article>
-				<h3><i class="fa-solid fa-chess-king"></i><br>Plan Pro Max 229.9$</h3>
-				<ul class="plans__ul">
-					<li><i class="fa-solid fa-check"></i> Sitio Web Avanzado</li>
-					<li><i class="fa-solid fa-check"></i> Dominio</li>
-					<li><i class="fa-solid fa-check"></i> Web Hosting</li>
-					<li><i class="fa-solid fa-check"></i> Responsive Design</li>
-					<li><i class="fa-solid fa-check"></i> Certificación SSL</li>
-					<li><i class="fa-solid fa-check"></i> Compras Integradas</li>
-					<li><i class="fa-solid fa-check"></i> Cambios Adicionales</li>
-					<li><i class="fa-solid fa-check"></i> Boost de Posicionamiento (SEO)</li>
-					<li><i class="fa-solid fa-check"></i> Diseño Custom (eCommerce, etc.)</li>
-					<li><i class="fa-solid fa-check"></i> Bases de Datos (Inicio de Sesión, etc.)</li>
-				</ul>
-				<div class="plans__order">
-					<a href="pro-max-plan.html">Ordenar Ahora</a>
-				</div>
-			</article>
+			<div class="contact make-order">
+				<h2>Ordena tu Plan!</h2>
+				<form action="https://formspree.io/f/xvojpjvb" method="POST" class="contact__form">
+					<label for="Nombre">Nombre y Apellido</label>
+					<input type="text" name="Nombre" maxlength="20" placeholder="Escribe tu nombre..." required>
+					<label for="Nombre de Empresa">Nombre de Empresa</label>
+					<input type="text" name="Nombre de Empresa" maxlength="20" placeholder="Escribe el nombre de tu Empresa..." required>
+					<label for="Email">Email</label>
+					<input type="email" name="Email" placeholder="Escribe tu Email..." required>
+					<label for="Teléfono">Teléfono</label>
+					<input type="number" name="Teléfono" placeholder="Escribe tu número Telefónico..." required>
+					<label for="Tipo de Empresa">Tipo de Empresa</label>
+					<textarea name="Tipo de Empresa" size="no-resize" placeholder="De que trata tu Empresa/Emprendimiento..." required></textarea>
+					<div class="no-visible">
+						<label for="Mensaje">Plan</label>
+						<textarea readonly name="Mensaje" size="no-resize" placeholder="Escribe tu mensaje aquí" required>Plan Pro 149.9$</textarea>
+					</div>
+					<input type="submit" class="send" value="Ordenar">
+				</form>
+			</div>
 		</section>
 		<footer id="info">
 			<div class="footer-ctn">

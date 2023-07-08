@@ -200,7 +200,7 @@ body{
 		transition: .5s;}
 
 	#checkbtn:active{
-		transform: translateX(-10px);}
+		transform: translateY(10px);}
 
 	#checkbtn i{
 		font-size: 24px;
@@ -305,7 +305,7 @@ body{
 	width: 90%;
 	text-align: center;
 	margin: auto;
-	margin-bottom: 60px;
+	margin-bottom: 130px;
 	background: #121212;
 	color: var(--clr-white2);
 	padding: 10px;
@@ -366,6 +366,10 @@ body{
 	background: transparent;
 	border: 2px solid var(--clr-main);}
 
+.plan-page{
+	width: 80%;
+}
+
 @media (max-width: 800px){
 	.plans article:nth-child(2){
 			padding: 0px 0px 20px 0px;
@@ -376,7 +380,9 @@ body{
 
 @media (max-width: 768px){
 	.plans{
-		flex-wrap: wrap;}}
+		flex-wrap: wrap;}
+	.plan-page{
+		width: 90%;}}
 
 .contact{
 	background: linear-gradient(180deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)), url(../img/code.jpg);
@@ -421,6 +427,20 @@ body{
 .contact__form .send:hover{
 	background: var(--clr-white);
 	color: var(--clr-main);}
+
+.make-order{
+	background: none;}
+
+.make-order textarea{
+	}
+
+.make-order input[type=number]::-webkit-inner-spin-button,
+.make-order input[type=number]::-webkit-outer-spin-button{
+	-webkit-appearance: none;
+	margin: 0;}
+
+.no-visible{
+	display: none;}
 
 /* CARROUSEL */
 
@@ -539,6 +559,18 @@ footer{
 .swiper-slide i{
 	padding-left: 4px;}
 
+.swipe__p{
+	z-index: 100;
+	position: absolute;
+	font-size: 18px;
+	display: none;
+	text-align: center;
+	left: 0;
+	right: 0;
+	top: 35px;
+	color: rgba(255, 255, 255, .6);
+	padding: 15px;}
+
 @media (max-width: 800px){
 	.swiper{
 	width: 80%;
@@ -553,12 +585,17 @@ footer{
 		align-items: center;
 	}
 
+	.swipe__p{
+		display: block;
+	}
+
+	.swiper-button-prev, .swiper-button-next{
+	--swiper-navigation-size: 0px;	
 }
 
-@media (max-width: 400px){
-	.swiper{
-		width: 85%;
-		height: 250px;
+.swiper{
+		width: 95%;
+		height: 290px;
 	}
 	.swiper-slide a{
 		bottom: 60px;
@@ -566,7 +603,4 @@ footer{
 		padding: 7px;
 	}
 
-	.swiper-button-prev, .swiper-button-next{
-	--swiper-navigation-size: 24px;	
-}
 }
