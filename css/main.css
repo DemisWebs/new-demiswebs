@@ -42,7 +42,7 @@
 #contenedor-carga{
 	background: #fff;
   	width: 100%;
-  	height: 100%;
+  	height: 100vh;
   	position: fixed;
   	transition: all 1s ease;
   	z-index: 1000;}
@@ -54,7 +54,7 @@
   margin: 8px;
   border-radius: 50%;
   border: 1.5px solid #fff;
-  border-color: #ccc #ccc #ccc transparent;
+  border-color: var(--clr-main) var(--clr-main) var(--clr-main) transparent;
   animation: carga 1.2s linear infinite;
   position: absolute;
   top: 0;
@@ -193,19 +193,24 @@ body{
 
 /*NAV RESPONSIVE*/
 
-#checkbtn, #check{
+#checkbtn, #check, #close{
 	display: none;}
+
+#checkbtn, #close{
+	text-align: center;
+	width: 24px;
+	transition: .5s;
+	cursor: pointer;}
 
 @media (max-width: 768px){
 
 	#checkbtn{
-		display: block;
-		transition: .5s;}
+		display: block;}
 
-	#checkbtn:active{
+	#checkbtn:active, #close:active{
 		transform: translateY(10px);}
 
-	#checkbtn i{
+	#checkbtn i, #close i{
 		font-size: 24px;
 		color: var(--clr-white2);}
 
@@ -217,6 +222,8 @@ body{
 		top: -200%;
 		right: 0;
 		width: 100%;
+		padding-top: 10px;
+		gap: 10px;
 		height: 130px;
 		background: var(--clr-white);
 		transition: .3s;}
@@ -224,13 +231,15 @@ body{
 		.header-ctn nav{
 			background: #121212;}
 
-	.header-ctn__nav a{
-		color: var(--clr-white2);
-		padding: 20px;}
-
 	#check:checked ~ .header-ctn__nav{
 		top: 80px;
-		transition: .3s;}}
+		transition: .3s;}
+		
+	#check:checked ~ #checkbtn{
+		display: none;}
+
+		#check:checked ~ #close{
+		display: block;}}
 
 /*OFFERING*/
 
